@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+html {
+  font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* ==========TYPOGRAPHY========== */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  background-color: #f55a5a;
+  color: #fff;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+header h3 {
+  margin-left: 0.5em;
 }
 
-.App-link {
-  color: #61dafb;
+/* ==========CLASSES========== */
+
+.travel-list {
+  margin: 3em;
+  display: flex;
+}
+.travel-list .image img {
+  width: 7.8125em;
+  height: 10.5em;
+  border-radius: 5px;
+  margin-right: 1.3em;
+}
+.location {
+  display: flex;
+  align-items: center;
+}
+.travel-list .location p {
+  text-transform: uppercase;
+  margin-right: 0.8em;
+  letter-spacing: 2px;
+  font-size: 0.8em;
+}
+.travel-list .location img {
+  margin-right: 0.4em;
+  width: 0.7em;
+}
+.travel-list .location a {
+  text-decoration: underline;
+  color: #918e9b;
+  font-size: 0.7em;
+}
+.desc h1 {
+  margin: 0 auto;
+}
+.desc h4 {
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-size: 0.8em;
+}
+.desc p {
+  margin-top: 1em;
+  font-size: 0.8em;
+}
+.desc {
+  max-width: 40%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 950px) {
+  html {
+    font-size: 15px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 840px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 777px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 670px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (max-width: 560px) {
+  html {
+    font-size: 8px;
   }
 }
